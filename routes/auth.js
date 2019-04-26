@@ -3,6 +3,8 @@ const authRoutes = express.Router()
 const Employee = require('../models/Employee')
 const passport = require('../helpers/passport')
 
+//Esto es un comentario
+
 function checkIfLogin(req,res,next){
   if(req.isAuthenticated()){
     return next();
